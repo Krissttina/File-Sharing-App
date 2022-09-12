@@ -1,5 +1,6 @@
 const dragArea = document.querySelector('.drag-area');
 const dragText = document.querySelector('.header');
+const reloadBtn = document.querySelector('.reload');
 
 let button = document.querySelector('.button');
 let input = document.querySelector('input');
@@ -38,6 +39,19 @@ dragArea.addEventListener('drop', (event) => {
     file = event.dataTransfer.files[0];
     displayFile();
 });
+
+//visible button
+
+    button.addEventListener('click', () => {
+        reloadBtn.style.visibility = 'visible';
+    });
+
+dragText.addEventListener('click', () => {
+    reloadBtn.style.visibility = 'visible';
+});
+
+//here
+
 
 function displayFile(){
     let fileType = file.type;

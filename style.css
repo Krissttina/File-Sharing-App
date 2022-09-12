@@ -73,3 +73,14 @@ h3{
     height: 100%;
     object-fit: cover;
 }
+
+.reload{
+    margin: 15px 5px;
+    width: 170px;
+    height: 25px;
+    font-size: 17px;
+    color: white;
+    background: #1683ff;
+    border: none;
+    border-radius: 0.5rem;
+}
